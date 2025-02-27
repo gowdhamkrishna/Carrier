@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Delius&family=Lora:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containerRight{
+ 
+  object-fit: cover;
+;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skillContainer{
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  font-family: "Atkinson Hyperlegible Next", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+/* From Uiverse.io by adamgiebl */ 
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(98, 0, 255, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #004cff;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #0073ff;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
+
+.InputContainer {
+  width:50vw;
+  height: 70px;
+  border-radius: 10px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to bottom,rgba(255, 0, 0, 0.4),rgb(148, 61, 7)); */
+  
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width:50vw;
+  border-radius: 10px;
+  height: 65px;
+  border: none;
+  outline: none;
+  background-color:rgb(226, 229, 255,0.6);
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+  .beautiful-button:hover {
+    background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+  }
+  
+  /* Click animation */
+  .beautiful-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Shimmer animation */
+  @keyframes button-shimmer {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  
+  /* Particle animation */
+  @keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+.RoadMap{
+  font-family: "Atkinson Hyperlegible Next", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+.cardContainer {
+  overflow-y: auto; /* Enable scrolling */
+}
+
+/* Hide the vertical scrollbar */
+.cardContainer::-webkit-scrollbar:vertical {
+  width: 0px;
+  display: none; /* This may not work in all browsers */
+}
+
+/* Style the scrollbar */
+.cardContainer::-webkit-scrollbar {
+
+  height: 5px;
+}
+
+/* Style the scrollbar thumb */
+.cardContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 255, 0.2);
+  border-radius: 4px;
+}
+.VideoT {
+  font-family: "Delius", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.stepDes{
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.RoadMap::-webkit-scrollbar {
+  height: 0px; /* Hides horizontal scrollbar */
+  width: 5px;  /* Keeps vertical scrollbar visible */
+}
+
+.RoadMap::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Ensures scrollbar is hidden */
+}
+/* Glassy effect for Toastify container */
+.Toastify__toast {
+  background: rgba(35, 21, 228, 0.2) ; 
+  backdrop-filter: blur(10px); /* 2lur effect */
+  color: white !important; /* Text color */
+  border: 1px solid rgba(94, 8, 255, 0.3); /* Soft border */
+  border-radius: 10px; /* Rounded corners */
+}
