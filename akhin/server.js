@@ -1,3 +1,4 @@
+"use server"
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const apiKey = "AIzaSyASshiZEg3EtxvsI8pPtMe6I14sOuaZ22A";
@@ -19,7 +20,7 @@ export const getPromptResponse = async (prompt) => {
     ]
     ,"Topcolleges":[{collegeName:"name",location:"Place"},{collegeName:"name2",location:"Place2"}]
   }
-  Ensure 'resources.youtube' includes highly relevant, long-duration videos with detailed descriptions show content based in India.`;
+  Ensure 'resources.youtube' includes highly relevant, long-duration videos with detailed descriptions show content based in India and add about 50 colleges around India .`;
 
   try {
     let result = await model.generateContent(serverPrompt);
@@ -66,5 +67,31 @@ export const getYoutube = async (searchQuery) => {
   } catch (error) {
     console.log("Error fetching YouTube data:", error);
     return [];
+  }
+};
+export const CarrerDesc = async (json) => {
+
+  const serverPrompt = `These are some interests of mine: ${JSON.stringify(
+    json
+  )}. Based on this, suggest some career options as 1:exampleCarrier,2:Example carrier etc.`;
+
+  try {
+    // Ensure the model is initialized (replace with your actual model initialization)
+    // const model = new GenerativeModel(...);
+
+    // Generate content using the model
+    let result = await model.generateContent(serverPrompt);
+    console.log("Server response received.");
+
+    // Extract the response text
+    result = await result.response.text();
+    console.log("Generated Career Suggestions:", result);
+
+    // Return the result to the caller
+    return result;
+  } catch (error) {
+    console.error("Error generating career suggestions:", error);
+    // Return an error message or status
+    return { error: "Failed to generate career suggestions", details: error };
   }
 };

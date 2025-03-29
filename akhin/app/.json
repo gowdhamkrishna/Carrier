@@ -1,0 +1,400 @@
+{
+    "title": "Roadmap to Becoming a Proficient React Developer in India",
+    "steps": [
+        {
+            "step": 1,
+            "desc": "Master the Fundamentals of JavaScript: Understand variables, data types, functions, DOM manipulation, and ES6+ features.",
+            "roadmapdesc": "Laying a solid foundation in JavaScript is crucial before diving into React. Focus on asynchronous programming, closures, and prototypal inheritance.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "JavaScript Full Course for free 🌐 (2024)",
+                        "url": "https://www.youtube.com/watch?v=lfmg-EJ8gm4"
+                    },
+                    {
+                        "title": "JavaScript Full Course 2024: Learn JavaScript A-Z for Free | Beginner to Advanced | Class 11",
+                        "url": "https://www.youtube.com/watch?v=uL107CGt-2I"
+                    },
+                    {
+                        "title": "JavaScript Full Course 2024: Learn JavaScript A-Z for Free | Beginner to Advanced | Class 10",
+                        "url": "https://www.youtube.com/watch?v=BrvTZeuLNgI"
+                    },
+                    {
+                        "title": "JavaScript Complete Course In Hindi (2025)",
+                        "url": "https://www.youtube.com/watch?v=woUkblFsm40"
+                    },
+                    {
+                        "title": "JavaScript Full Course 2024: Learn JavaScript A-Z for Free | Beginner to Advanced | Class 09",
+                        "url": "https://www.youtube.com/watch?v=faC3sdCvbBI"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 2,
+            "desc": "Learn HTML and CSS: Grasp the structure of web pages and how to style them effectively. Focus on responsive design principles and CSS preprocessors like Sass or Less.",
+            "roadmapdesc": "Understanding HTML and CSS allows you to structure and style your React components effectively. Responsive design is crucial for creating accessible web applications.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Learn Web Design - Responsive Web Design",
+                        "url": "https://www.youtube.com/watch?v=laOZ8FFsZf4"
+                    },
+                    {
+                        "title": "DRY CSS -- Theories, methods and tools for efficient and scalable Stylesheets #wcmtl2012",
+                        "url": "https://www.youtube.com/watch?v=-cIAk3vDeBc"
+                    },
+                    {
+                        "title": "Frontend Developer Roadmap for Beginners 2023-24: A Comprehensive Guide",
+                        "url": "https://www.youtube.com/watch?v=VVr5xESzsr0"
+                    },
+                    {
+                        "title": "Strategy Guide to CSS Custom Properties - Mike Riethmuller",
+                        "url": "https://www.youtube.com/watch?v=A1-f8cx6fbE"
+                    },
+                    {
+                        "title": "Harry Roberts: CSS for Software Engineers for CSS Developers",
+                        "url": "https://www.youtube.com/watch?v=rLJNHgWbYOI"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 3,
+            "desc": "Introduction to React: Understand the core concepts of React, including components, JSX, props, and state. Set up a basic React development environment.",
+            "roadmapdesc": "Focus on understanding the component-based architecture of React. Practice creating and composing components, passing data through props, and managing state.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "React Tutorial for Beginners",
+                        "url": "https://www.youtube.com/watch?v=SqcY0GlETPk"
+                    },
+                    {
+                        "title": "Components, Props and JSX in React | Sigma Web Development Course - Tutorial #106",
+                        "url": "https://www.youtube.com/watch?v=S4VH8hddg8c"
+                    },
+                    {
+                        "title": "Learn React JS with Project in 2 Hours  | React Tutorial for Beginners | React Project Crash Course",
+                        "url": "https://www.youtube.com/watch?v=0riHps91AzE"
+                    },
+                    {
+                        "title": "ReactJS Tutorial for Beginners | Learn React in 2.5 Hours | Part 1",
+                        "url": "https://www.youtube.com/watch?v=gY5sGvq-8h8"
+                    },
+                    {
+                        "title": "ReactJs Crash Course: Master the Basics in One Video! Ignite Your Front-End Mastery Series!",
+                        "url": "https://www.youtube.com/watch?v=Xe8CkYZvCig"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 4,
+            "desc": "Working with Components and Props: Learn how to create reusable components and pass data between them using props. Understand different types of components (functional vs. class).",
+            "roadmapdesc": "Practice creating different types of components and passing data effectively. Focus on component composition and creating a modular architecture.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Understanding Props and PropTypes in React | Complete React Course in Hindi #6",
+                        "url": "https://www.youtube.com/watch?v=xvm3X1oyTL8"
+                    },
+                    {
+                        "title": "React Components in Hindi | Functional Component in React JS Hindi in 2020 #18",
+                        "url": "https://www.youtube.com/watch?v=YcXVT2udeu8"
+                    },
+                    {
+                        "title": "Functional Components &amp; Props &amp; useState Hook",
+                        "url": "https://www.youtube.com/watch?v=orLqzKffcXo"
+                    },
+                    {
+                        "title": "Props, Creating &amp; Nesting Components, Component States, setState | ReactJS Training Course | Uplatz",
+                        "url": "https://www.youtube.com/watch?v=79meeitJ3pM"
+                    },
+                    {
+                        "title": "Components, Props and JSX in React | Sigma Web Development Course - Tutorial #106",
+                        "url": "https://www.youtube.com/watch?v=S4VH8hddg8c"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 5,
+            "desc": "State Management: Learn how to manage component state and update the UI dynamically. Understand the concept of immutability and how to use setState properly.",
+            "roadmapdesc": "Master the `useState` hook in functional components and the `setState` method in class components. Understand how to update state correctly and avoid common pitfalls.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Subjecting State to Good Behavior - Kim Maida",
+                        "url": "https://www.youtube.com/watch?v=flpnha6OxKI"
+                    },
+                    {
+                        "title": "React Course Introduction",
+                        "url": "https://www.youtube.com/watch?v=6D0Shmu3Kfg"
+                    },
+                    {
+                        "title": "React in an Hour",
+                        "url": "https://www.youtube.com/watch?v=zduVUMYP8wY"
+                    },
+                    {
+                        "title": "Portals in React and Vue.js - Rob Komaromi",
+                        "url": "https://www.youtube.com/watch?v=aotyjM7tvC4"
+                    },
+                    {
+                        "title": "01 - React Lifecycle In-Depth by James Polanco",
+                        "url": "https://www.youtube.com/watch?v=_KU214BL2cQ"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 6,
+            "desc": "Handling Events: Learn how to handle user events like clicks, form submissions, and keyboard input. Understand event binding and how to access event data.",
+            "roadmapdesc": "Practice handling different types of events and accessing event data. Focus on event delegation and optimizing event handling performance.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "#23: Event Handling in React: Synthetic Events, Naming Conventions of Events &amp; Functions &amp; More",
+                        "url": "https://www.youtube.com/watch?v=iWGKkMTRq1s"
+                    },
+                    {
+                        "title": "Deep Dive into Angular: Event Binding Techniques",
+                        "url": "https://www.youtube.com/watch?v=txfV8ax8oOs"
+                    },
+                    {
+                        "title": "Events in Javascript | chai aur #javascript",
+                        "url": "https://www.youtube.com/watch?v=_ALUMTa8BAE"
+                    },
+                    {
+                        "title": "Javascript &amp; jQuery Tutorial for Beginners Tutorial 4 - Handle the Events in jQuery",
+                        "url": "https://www.youtube.com/watch?v=1cDnHVJVHlw"
+                    },
+                    {
+                        "title": "javascript 6 || keyboard events || data binding -1",
+                        "url": "https://www.youtube.com/watch?v=yfotBp8kAco"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 7,
+            "desc": "Working with Forms: Learn how to create and manage forms in React. Understand controlled and uncontrolled components, and how to validate form data.",
+            "roadmapdesc": "Practice building different types of forms and handling form submissions. Focus on validation and error handling to ensure data integrity.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Form Validation using React | React Forms Handling &amp; Validation Tutorial | React Sign up Form",
+                        "url": "https://www.youtube.com/watch?v=EYpdEYK25Dc"
+                    },
+                    {
+                        "title": "Modern React Tutorials - React Forms",
+                        "url": "https://www.youtube.com/watch?v=5oxvwig4zG4"
+                    },
+                    {
+                        "title": "Part 19 Controlled way React forms | React | React Forms | Form validations | Error handling",
+                        "url": "https://www.youtube.com/watch?v=f04jX5cPj8s"
+                    },
+                    {
+                        "title": "React Hook Form - Complete Tutorial (with Zod)",
+                        "url": "https://www.youtube.com/watch?v=cc_xmawJ8Kg"
+                    },
+                    {
+                        "title": "How to Handle Forms In React | Multiple Form Handling In ReactJS",
+                        "url": "https://www.youtube.com/watch?v=kaxJ3WY_epQ"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 8,
+            "desc": "Lists and Keys: Learn how to render lists of data dynamically using the `map` function. Understand the importance of keys and how to use them effectively.",
+            "roadmapdesc": "Practice rendering different types of lists and using keys to optimize rendering performance. Understand the concept of reconciliation and how keys help React identify and update elements efficiently.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Flutter Learning Day 6 - Making HTTP calls &amp; render scrollable list view to show data",
+                        "url": "https://www.youtube.com/watch?v=Uux3gJ7jcN8"
+                    },
+                    {
+                        "title": "React Web Series Episode 9 |  Part 3, Map function | React Tutorial in Hindi",
+                        "url": "https://www.youtube.com/watch?v=wy0GngLfd6A"
+                    },
+                    {
+                        "title": "Diving into React Essentials: Learning JSX, Props, and Lists: Lecture 29",
+                        "url": "https://www.youtube.com/watch?v=whzJ86CYl4Q"
+                    },
+                    {
+                        "title": "React Tutorial #4 - Form Handling &amp; How to Render components dynamically(in sinhala)",
+                        "url": "https://www.youtube.com/watch?v=TJZ8QKC0-Ms"
+                    },
+                    {
+                        "title": "Understanding Props and PropTypes in React | Complete React Course in Hindi #6",
+                        "url": "https://www.youtube.com/watch?v=xvm3X1oyTL8"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 9,
+            "desc": "Hooks: Dive deeper into React Hooks, including useState, useEffect, useContext, and custom hooks. Understand how hooks enable you to use state and other React features in functional components.",
+            "roadmapdesc": "Master the most commonly used hooks and learn how to create your own custom hooks to encapsulate reusable logic. Understand the rules of hooks and how to avoid common mistakes.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "React Hooks - Most Used Features",
+                        "url": "https://www.youtube.com/watch?v=-9M9CGSd69I"
+                    },
+                    {
+                        "title": "8 React Hooks in 1 Video",
+                        "url": "https://www.youtube.com/watch?v=dq1RMQQYKUs"
+                    },
+                    {
+                        "title": "ReactJS &amp; React Hooks Tutorial For Beginners",
+                        "url": "https://www.youtube.com/watch?v=kKSd5F_KDkM"
+                    },
+                    {
+                        "title": "Understanding React Hooks: useState, useEffect, useContext, useReducer, useRef, useCallback, useMemo",
+                        "url": "https://www.youtube.com/watch?v=LBHtBTAFu2Y"
+                    },
+                    {
+                        "title": "React.js - Custom Hooks Part 1/2: Basic data fetching",
+                        "url": "https://www.youtube.com/watch?v=_jutykQIaO4"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 10,
+            "desc": "Routing: Implement client-side routing using React Router. Learn how to create different routes and navigate between them.",
+            "roadmapdesc": "Understand the different types of routers (BrowserRouter, HashRouter) and how to configure them. Practice creating nested routes and passing data between routes.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "React Router - Complete Tutorial",
+                        "url": "https://www.youtube.com/watch?v=oTIJunBa6MA"
+                    },
+                    {
+                        "title": "React router crash course",
+                        "url": "https://www.youtube.com/watch?v=eLT2uiV7D8g"
+                    },
+                    {
+                        "title": "Learn React Router v6 In 45 Minutes",
+                        "url": "https://www.youtube.com/watch?v=Ul3y1LXxzdU"
+                    },
+                    {
+                        "title": "React router crash course",
+                        "url": "https://www.youtube.com/watch?v=VJov5QWEKE4"
+                    },
+                    {
+                        "title": "Lec 2 # Mastering React Routing: A Comprehensive Guide to Navigating Your Web App with React Router",
+                        "url": "https://www.youtube.com/watch?v=FY3h4q17Ges"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 11,
+            "desc": "API Integration: Learn how to fetch data from APIs using `fetch` or `axios`. Understand how to handle asynchronous operations and display data in your components.",
+            "roadmapdesc": "Practice making different types of API requests (GET, POST, PUT, DELETE) and handling different types of responses. Focus on error handling and displaying loading indicators.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Fetching Data in React - Complete Tutorial",
+                        "url": "https://www.youtube.com/watch?v=00lxm_doFYw"
+                    },
+                    {
+                        "title": "Handle APIs like a pro in Reactjs | Custom react query | Axios | Race condition",
+                        "url": "https://www.youtube.com/watch?v=NxAwOjb_NlA"
+                    },
+                    {
+                        "title": "Complete Axios in React for Beginners in Hindi",
+                        "url": "https://www.youtube.com/watch?v=ug0tq-EidEE"
+                    },
+                    {
+                        "title": "Last Lecture : Fetch API with Project | JavaScript Full Course",
+                        "url": "https://www.youtube.com/watch?v=CyGodpqcid4"
+                    },
+                    {
+                        "title": "ReactJS Tutorial - How To Get Data From An API With React | Fetch API | ReactJS Tutorial in Hindi",
+                        "url": "https://www.youtube.com/watch?v=JFBYU1JC_f4"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 12,
+            "desc": "State Management Libraries: Explore state management libraries like Redux or Zustand. Understand how they help you manage complex application state effectively.",
+            "roadmapdesc": "Learn the core concepts of Redux (actions, reducers, store) and how to connect your React components to the store. Understand the benefits of using Redux or Zustand for managing global state.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "React.JS State Management: Redux vs. Context API",
+                        "url": "https://www.youtube.com/watch?v=RjZ0fy04UE4"
+                    },
+                    {
+                        "title": "| Learn about State management tool in react with Redux | #learnwithibase #growwithibase",
+                        "url": "https://www.youtube.com/watch?v=9LV-_kcpn8o"
+                    },
+                    {
+                        "title": "Angular state management with NGRX | NGRX tutorial for beginner | Angular project with NGRX state |",
+                        "url": "https://www.youtube.com/watch?v=a3_GW3RBqn0"
+                    },
+                    {
+                        "title": "What is my favorite React state management library",
+                        "url": "https://www.youtube.com/watch?v=l1KiCw2Iz1Y"
+                    },
+                    {
+                        "title": "React easy state management Zustand",
+                        "url": "https://www.youtube.com/watch?v=-h0ThFht1q0"
+                    }
+                ]
+            }
+        },
+        {
+            "step": 13,
+            "desc": "Testing: Learn how to write unit tests and integration tests for your React components using Jest and React Testing Library.",
+            "roadmapdesc": "Focus on writing tests that cover the core functionality of your components and ensure they behave as expected. Understand the importance of testing and how it helps you build more robust and maintainable applications.",
+            "resources": {
+                "youtube": [
+                    {
+                        "title": "Testing In React Tutorial - Jest and React Testing Library",
+                        "url": "https://www.youtube.com/watch?v=JBSUgDxICg8"
+                    },
+                    {
+                        "title": "React Testing for Beginners: Start Here!",
+                        "url": "https://www.youtube.com/watch?v=8Xwq35cPwYg"
+                    },
+                    {
+                        "title": "React Testing Tutorial (Jest + React Testing Library)",
+                        "url": "https://www.youtube.com/watch?v=ML5egqL3YFE"
+                    },
+                    {
+                        "title": "React Testing Tutorial with React Testing Library and Jest",
+                        "url": "https://www.youtube.com/watch?v=Flo268xRpV0"
+                    },
+                    {
+                        "title": "React Testing Crash Course",
+                        "url": "https://www.youtube.com/watch?v=OVNjsIto9xM"
+                    }
+                ]
+            }
+        }
+    ],
+    "Topcolleges": [
+        {
+            "collegeName": "IIT Bombay",
+            "location": "Mumbai, Maharashtra"
+        },
+        {
+            "collegeName": "IIT Delhi",
+            "location": "New Delhi"
+        },
+        {
+            "collegeName": "BITS Pilani",
+            "location": "Pilani, Rajasthan"
+        },
+        {
+            "collegeName": "IIIT Hyderabad",
+            "location": "Hyderabad, Telangana"
+        }
+    ]
+}

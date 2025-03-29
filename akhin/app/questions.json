@@ -1,0 +1,166 @@
+{
+  "questions": [
+    {
+      "category": "Interests",
+      "questions": [
+        {
+          "question": "What are your hobbies?",
+          "options": ["Coding", "Reading", "Writing", "Traveling", "Gaming", "Sports", "usic", "Cooking", "Photography", "Art", "Gardening", "Hiking", "Dancing", "Crafting", "Other"]
+        },
+        {
+          "question": "Which fields are you interested in?",
+          "options": ["Technology", "Healthcare", "Education", "Finance", "Arts", "Sports", "Business", "Law", "Entertainment", "Science", "Politics", "Environment", "Other"]
+        },
+        {
+          "question": "Do you enjoy working with technology?",
+          "options": ["Yes", "No", "Sometimes", "Interested in learning more"]
+        },
+        {
+          "question": "Are you interested in creative work?",
+          "options": ["Yes", "No", "Sometimes", "Not sure"]
+        },
+        {
+          "question": "Do you prefer working with people or working alone?",
+          "options": ["With people", "Alone", "Mix of both", "Depends on the task"]
+        },
+        {
+          "question": "Do you like problem-solving?",
+          "options": ["Yes", "No", "Sometimes", "Depends on the problem"]
+        }
+      ]
+    },
+    {
+      "category": "Skills",
+      "questions": [
+        {
+          "question": "What technical skills do you have?",
+          "options": ["Programming", "Data Analysis", "Web Development", "Mobile Development", "Machine Learning", "Cybersecurity", "UI/UX Design", "Networking", "Cloud Computing", "Database Management", "Blockchain", "AI/ML", "Other"]
+        },
+        {
+          "question": "What soft skills do you have?",
+          "options": ["Communication", "Teamwork", "Problem Solving", "Creativity", "Leadership", "Time Management", "Adaptability", "Empathy", "Critical Thinking", "Conflict Resolution", "Other"]
+        },
+        {
+          "question": "Are you comfortable with public speaking?",
+          "options": ["Yes", "No", "Sometimes", "Trying to improve"]
+        },
+        {
+          "question": "Do you have experience managing a team?",
+          "options": ["Yes", "No", "Some experience", "Interested in learning"]
+        },
+        {
+          "question": "Are you proficient in any programming languages?",
+          "options": ["JavaScript", "Python", "Java", "C++", "C#", "Ruby", "Go", "Swift", "Kotlin", "TypeScript", "Other"]
+        },
+        {
+          "question": "Are you comfortable working with numbers and data?",
+          "options": ["Yes", "No", "Somewhat", "Interested in learning more"]
+        }
+      ]
+    },
+    {
+      "category": "Education",
+      "questions": [
+        {
+          "question": "What is your highest level of education?",
+          "options": ["High School", "Diploma", "Bachelor's Degree", "Master's Degree", "PhD", "Other"]
+        },
+        {
+          "question": "Did you specialize in any of the following fields?",
+          "options": ["Computer Science", "Engineering", "Business", "Medicine", "Law", "Arts", "Science", "Mathematics", "Economics", "Psychology", "Other"]
+        },
+        {
+          "question": "Are you interested in continuing your education?",
+          "options": ["Yes", "No", "Maybe", "Not sure"]
+        },
+        {
+          "question": "Did you complete any professional certifications?",
+          "options": ["Yes", "No", "Currently working on it", "Planning to start soon"]
+        },
+        {
+          "question": "Did you participate in any extracurricular activities during your studies?",
+          "options": ["Yes", "No", "Occasionally", "Don't remember"]
+        }
+      ]
+    },
+    {
+      "category": "Work Preferences",
+      "questions": [
+        {
+          "question": "What type of work environment do you prefer?",
+          "options": ["Office", "Remote", "Hybrid", "Flexible", "No preference"]
+        },
+        {
+          "question": "What is your preferred work schedule?",
+          "options": ["Full-time", "Part-time", "Freelance", "Contract", "Flexible", "No preference"]
+        },
+        {
+          "question": "Do you prefer working independently or in a team?",
+          "options": ["Independently", "In a team", "Mix of both", "No preference"]
+        },
+        {
+          "question": "Do you prefer working on short-term or long-term projects?",
+          "options": ["Short-term", "Long-term", "Mix of both", "No preference"]
+        },
+        {
+          "question": "Do you want to work in a high-pressure environment?",
+          "options": ["Yes", "No", "Sometimes", "Depends on the role"]
+        },
+        {
+          "question": "Do you prefer working on creative or technical tasks?",
+          "options": ["Creative", "Technical", "Mix of both", "No preference"]
+        }
+      ]
+    },
+    {
+      "category": "Career Goals",
+      "questions": [
+        {
+          "question": "What are your career goals?",
+          "options": ["High Salary", "Work-Life Balance", "Job Security", "Career Growth", "Creative Freedom", "Helping Others", "Starting a Business", "Flexible Schedule", "Other"]
+        },
+        {
+          "question": "Are you open to relocating for work?",
+          "options": ["Yes", "No", "Maybe", "Depends on the location"]
+        },
+        {
+          "question": "Are you interested in working for a startup or a large company?",
+          "options": ["Startup", "Large company", "No preference", "Depends on the role"]
+        },
+        {
+          "question": "Are you interested in gaining international work experience?",
+          "options": ["Yes", "No", "Maybe", "Not sure"]
+        },
+        {
+          "question": "Would you consider a job that requires frequent travel?",
+          "options": ["Yes", "No", "Occasionally", "Depends on the job"]
+        }
+      ]
+    },
+    {
+      "category": "Lifestyle",
+      "questions": [
+        {
+          "question": "What is your preferred work-life balance?",
+          "options": ["Strict separation of work and life", "Flexible schedule", "Work-focused lifestyle", "No preference"]
+        },
+        {
+          "question": "Do you value job stability over salary?",
+          "options": ["Yes", "No", "Depends on the salary", "Not sure"]
+        },
+        {
+          "question": "How important is career growth to you?",
+          "options": ["Very important", "Somewhat important", "Not important", "Not sure"]
+        },
+        {
+          "question": "Would you prefer working for a company with a clear career ladder?",
+          "options": ["Yes", "No", "Maybe", "No preference"]
+        },
+        {
+          "question": "Are you comfortable working in different time zones?",
+          "options": ["Yes", "No", "Sometimes", "Depends on the role"]
+        }
+      ]
+    }
+  ]
+}

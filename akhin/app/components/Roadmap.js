@@ -37,7 +37,7 @@ const Roadmap = ({steps}) => {
             {steps.resources.youtube.map((video, index) => (
               <div key={index} className=" ">
                 <div className="flex hover:bg-green-300/30  flex-col m-4 w-[350px]  items-center bg-gradient-to-r from-green-900/20 to-blue-500/10 mx-2 border border-blue-950/20 backdrop-blur-lg rounded-lg p-4">
-                <a href={video.url}>
+                <a href={video.url} target="_blank" rel="noopener noreferrer">
                   
                   <Image
                     alt="none"

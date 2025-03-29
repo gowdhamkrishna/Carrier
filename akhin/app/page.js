@@ -6,7 +6,6 @@ import LineMap from "./components/LineMap.js";
 import Roadmap from "./components/Roadmap";
 import { useUser } from "@clerk/nextjs";
 import { ToastContainer, toast } from 'react-toastify';
-// import College from "./components/college";
 const Typewriter = ({ text, speed = 100, loop = true }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -27,233 +26,16 @@ const Typewriter = ({ text, speed = 100, loop = true }) => {
   }, [index, text, speed, loop]);
 
   return (
-    <span className="font-mono text-[30px] text-black/">{displayedText}</span>
+    <span className="font-mono text-[24px] md:text-[30px] text-blue-300/80 animate-pulse">
+      {displayedText}
+    </span>
   );
 };
 
 const Page = () => {
   
   const [json, setJson] = useState({
-    // "title": "Full Stack Developer Roadmap",
-    // "steps": [
-    //     {
-    //         "step": 1,
-    //         "desc": "Learn the Fundamentals of Front-End Development (HTML, CSS, JavaScript)",
-    //         "roadmapdesc": "Master the building blocks of web interfaces. Focus on creating semantic HTML, styling with CSS, and adding interactivity with JavaScript. Understand the DOM and browser rendering.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "HTML &amp; CSS Full Course - Beginner to Pro",
-    //                     "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc"
-    //                 },
-    //                 {
-    //                     "title": "HTML, CSS, and Javascript in 30 minutes",
-    //                     "url": "https://www.youtube.com/watch?v=_GTMOmRrqkU"
-    //                 },
-    //                 {
-    //                     "title": "HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code",
-    //                     "url": "https://www.youtube.com/watch?v=HcOc7P5BMi4"
-    //                 },
-    //                 {
-    //                     "title": "HTML Tutorial for Beginners: HTML Crash Course",
-    //                     "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
-    //                 },
-    //                 {
-    //                     "title": "JavaScript Course for Beginners – Your First Step to Web Development",
-    //                     "url": "https://www.youtube.com/watch?v=W6NZfCO5SIk"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 2,
-    //         "desc": "Learn a Front-End Framework (React, Angular, or Vue.js)",
-    //         "roadmapdesc": "Choose a popular framework to build complex UIs. React is recommended for its component-based architecture and vast ecosystem. Angular is a comprehensive framework suited for enterprise applications. Vue.js is a progressive framework known for its simplicity.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "I built the same app 10 times // Which JS Framework is best?",
-    //                     "url": "https://www.youtube.com/watch?v=cuHDQhDhvPE"
-    //                 },
-    //                 {
-    //                     "title": "What&#39;s The Most Popular Front End Framework and Which Should i learn (React Angular Vue)",
-    //                     "url": "https://www.youtube.com/watch?v=BsbegGfE5fA"
-    //                 },
-    //                 {
-    //                     "title": "What Is The BEST Front-End Framework? React vs Vue.js vs Angular!",
-    //                     "url": "https://www.youtube.com/watch?v=7JUzWnnBcsM"
-    //                 },
-    //                 {
-    //                     "title": "Frontend Development - Angular v/s React v/s Vue.js",
-    //                     "url": "https://www.youtube.com/watch?v=seCfs39HTtE"
-    //                 },
-    //                 {
-    //                     "title": "React vs Angular vs Vue: Which JavaScript Framework Should You Choose?",
-    //                     "url": "https://www.youtube.com/watch?v=a3JeapNlurg"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 3,
-    //         "desc": "Learn Back-End Development (Node.js, Python with Flask/Django, or Java with Spring)",
-    //         "roadmapdesc": "Choose a back-end technology based on your interests and job market demand. Node.js is JavaScript-based and good for real-time applications. Python with Flask/Django is excellent for data-driven applications. Java with Spring is suitable for enterprise-level projects.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "Django Tutorial for Beginners – Build Powerful Backends",
-    //                     "url": "https://www.youtube.com/watch?v=rHux0gMZ3Eg"
-    //                 },
-    //                 {
-    //                     "title": "Python Backend Web Development Course (with Django)",
-    //                     "url": "https://www.youtube.com/watch?v=jBzwzrDvZ18"
-    //                 },
-    //                 {
-    //                     "title": "Complete Backend Software Engineer Mind Map - Everything You Need to Know (2 HOURS!)",
-    //                     "url": "https://www.youtube.com/watch?v=oVfw8Oj-uH8"
-    //                 },
-    //                 {
-    //                     "title": "🔥 Backend Development Full Course 2023 | Learn Backend From Scratch | Node JS | Django | Simplilearn",
-    //                     "url": "https://www.youtube.com/watch?v=w_L5XMp44tc"
-    //                 },
-    //                 {
-    //                     "title": "Django Tutorial for Beginners | Full Course",
-    //                     "url": "https://www.youtube.com/watch?v=OTmQOjsl0eg"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 4,
-    //         "desc": "Learn Databases (SQL and NoSQL)",
-    //         "roadmapdesc": "Understand relational databases (SQL) and NoSQL databases. MySQL, PostgreSQL, and MongoDB are good starting points. Learn how to design database schemas and write efficient queries.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "SQL vs NoSQL or MySQL vs MongoDB",
-    //                     "url": "https://www.youtube.com/watch?v=ZS_kXvOeQ5Y"
-    //                 },
-    //                 {
-    //                     "title": "you need to learn SQL RIGHT NOW!! (SQL Tutorial for Beginners)",
-    //                     "url": "https://www.youtube.com/watch?v=xiUTqnI6xk8"
-    //                 },
-    //                 {
-    //                     "title": "SQL vs NoSQL - Difference B/W SQL &amp; NoSQL Databases | MySQL vs MongoDB Tutorial | Edureka",
-    //                     "url": "https://www.youtube.com/watch?v=QwevGzVu_zk"
-    //                 },
-    //                 {
-    //                     "title": "NoSQL Database Tutorial – Full Course for Beginners",
-    //                     "url": "https://www.youtube.com/watch?v=xh4gy1lbL2k"
-    //                 },
-    //                 {
-    //                     "title": "SQL Basics for Beginners | Learn SQL | SQL Tutorial for Beginners | Edureka",
-    //                     "url": "https://www.youtube.com/watch?v=zbMHLJ0dY4w"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 5,
-    //         "desc": "Learn APIs and RESTful Services",
-    //         "roadmapdesc": "Understand API design principles and how to create and consume RESTful services. Learn about HTTP methods, status codes, and API authentication.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "APIs for Beginners - How to use an API (Full Course / Tutorial)",
-    //                     "url": "https://www.youtube.com/watch?v=WXsD0ZgxjRw"
-    //                 },
-    //                 {
-    //                     "title": "What is REST API? | REST API Tutorial | REST API  Concepts and Examples | Edureka",
-    //                     "url": "https://www.youtube.com/watch?v=rtWH70_MMHM"
-    //                 },
-    //                 {
-    //                     "title": "APIs for Beginners - How to use an API (Full Course / Tutorial)",
-    //                     "url": "https://www.youtube.com/watch?v=GZvSYJDk-us"
-    //                 },
-    //                 {
-    //                     "title": "Rest API | Web Service Tutorial",
-    //                     "url": "https://www.youtube.com/watch?v=BZi44GOD8kY"
-    //                 },
-    //                 {
-    //                     "title": "REST API Crash Course - Introduction + Full Python API Tutorial",
-    //                     "url": "https://www.youtube.com/watch?v=qbLc5a9jdXo"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 6,
-    //         "desc": "Version Control (Git and GitHub)",
-    //         "roadmapdesc": "Learn Git for version control and GitHub for collaboration. Understand branching, merging, and pull requests. Contribute to open-source projects.",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "Complete Git and GitHub Tutorial for Beginners",
-    //                     "url": "https://www.youtube.com/watch?v=Ez8F0nW6S-w"
-    //                 },
-    //                 {
-    //                     "title": "Git Tutorial for Beginners - GitHub Version Control",
-    //                     "url": "https://www.youtube.com/watch?v=PWqS4NBhEY8"
-    //                 },
-    //                 {
-    //                     "title": "Day-9 | Git and GitHub | What is GIT ? | What is Version Control ? | #devops #2023 #github #gitlab",
-    //                     "url": "https://www.youtube.com/watch?v=fIMySI_gZJU"
-    //                 },
-    //                 {
-    //                     "title": "Complete Git and GitHub Tutorial",
-    //                     "url": "https://www.youtube.com/watch?v=apGV9Kg7ics"
-    //                 },
-    //                 {
-    //                     "title": "Complete git and Github course in Hindi",
-    //                     "url": "https://www.youtube.com/watch?v=q8EevlEpQ2A"
-    //                 }
-    //             ]
-    //         }
-    //     },
-    //     {
-    //         "step": 7,
-    //         "desc": "Deployment and DevOps Basics",
-    //         "roadmapdesc": "Learn how to deploy your applications to platforms like AWS, Azure, or Heroku. Understand basic DevOps concepts such as CI/CD and containerization (Docker).",
-    //         "resources": {
-    //             "youtube": [
-    //                 {
-    //                     "title": "DevOps Tutorial for Beginners | Learn DevOps in 7 Hours - Full Course | DevOps Training | Edureka",
-    //                     "url": "https://www.youtube.com/watch?v=hQcFE0RD0cQ"
-    //                 },
-    //                 {
-    //                     "title": "Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines",
-    //                     "url": "https://www.youtube.com/watch?v=4BibQ69MD8c"
-    //                 },
-    //                 {
-    //                     "title": "Azure DevOps Step by Step Tutorial for Beginners | DevOps Tutorial",
-    //                     "url": "https://www.youtube.com/watch?v=aonA7Kb7WGE"
-    //                 },
-    //                 {
-    //                     "title": "DevOps Basics for Beginners | Learn DevOps From Scratch in 6 hours | DevOps Training | Simplilearn",
-    //                     "url": "https://www.youtube.com/watch?v=XPIZkboWuTc"
-    //                 },
-    //                 {
-    //                     "title": "What is DevOps? REALLY understand it | DevOps vs SRE",
-    //                     "url": "https://www.youtube.com/watch?v=0yWAtQ6wYNM"
-    //                 }
-    //             ]
-    //         }
-    //     }
-    // ],
-    // "Topcolleges": [
-    //     {
-    //         "collegeName": "IIT (Indian Institute of Technology)",
-    //         "location": "Various Locations Across India"
-    //     },
-    //     {
-    //         "collegeName": "BITS Pilani",
-    //         "location": "Pilani, Rajasthan"
-    //     },
-    //     {
-    //         "collegeName": "IIIT (Indian Institute of Information Technology)",
-    //         "location": "Various Locations Across India"
-    //     }
-    // ]
+ 
 });
   const [steps, setSteps] = useState();
   const [input, setInput] = useState("");
@@ -294,66 +76,80 @@ const Page = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col md:flex-row overflow-hidden">
-       <ToastContainer />
-       
-      <div className="w-full md:w-1/3 h-full skillContainer bg-gradient-to-r from-blue-600/55 to-green-400/30 backdrop-blur-lg border">
-        <div className="w-full md:w-[33vw] h-full pt-[90px] flex flex-col items-center overflow-scroll">
-          <div className="flex fixed z-[100] pt-4 backdrop-blur-md w-full md:w-[34vw] bg-teal-950/10 left-0">
+    <div className="w-screen h-screen flex flex-col md:flex-row overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-900">
+      <ToastContainer 
+        position="top-right"
+        autoClose={3000}
+        theme="dark"
+        className="mt-16"
+      />
+      
+      <div className="w-full md:w-1/3 h-full skillContainer bg-gradient-to-r from-slate-900/90 to-blue-900/20 backdrop-blur-lg border-r border-white/5 shadow-2xl">
+        <div className="w-full md:w-[33vw] h-full pt-[90px] flex flex-col items-center overflow-scroll scrollbar-hide">
+          <div className="flex fixed z-[100] pt-16 backdrop-blur-xl w-full md:w-[34vw] bg-gradient-to-b from-slate-900 to-slate-900/95 left-0 border-b border-white/5 shadow-lg">
             <p
               onClick={() => setActiveTab("role")}
-              className={`text-[25px] px-4 md:px-8 cursor-pointer transition duration-300 ease-in-out ${
-                activeTab === "role" ? "text-blue-700/90 border-b-2 border-gray-500" : "text-white/50"
+              className={`text-[20px] px-4 md:px-8 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-400 relative group ${
+                activeTab === "role" ? "text-blue-400 font-medium" : "text-white/50"
               }`}
             >
               Role based Roadmaps
+              <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 transition-transform duration-300 ${
+                activeTab === "role" ? "scale-x-100" : "group-hover:scale-x-75"
+              }`}></span>
             </p>
 
             <p
               onClick={() => setActiveTab("skill")}
-              className={`text-[25px] px-4 md:px-8 cursor-pointer transition duration-300 ease-in-out ${
-                activeTab === "skill" ? "text-blue-700/90 border-b-2 border-gray-500" : "text-white/50"
+              className={`text-[20px] px-4 md:px-8 cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-400 relative group ${
+                activeTab === "skill" ? "text-blue-400 font-medium" : "text-white/50"
               }`}
             >
               Skill based Roadmaps
+              <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transform scale-x-0 transition-transform duration-300 ${
+                activeTab === "skill" ? "scale-x-100" : "group-hover:scale-x-75"
+              }`}></span>
             </p>
           </div>
-          <div className="pt-[83px] w-full">
+          <div className="pt-[83px] w-full px-4">
             {(activeTab === "role" ? Role : Skill).map((item, index) => (
               <div
                 onClick={() => handleClickButton(item)}
-                className="w-full text-black/90 text-[20px] font-light hover:bg-black/20 hover:text-white text-center border border-white/10 backdrop-blur-lg bg-black/10 p-5"
+                className="group w-full text-white/90 text-[18px] font-light hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-cyan-500/20 hover:text-white transition-all duration-500 text-center rounded-xl border border-white/5 backdrop-blur-lg bg-white/5 p-4 mb-3 relative overflow-hidden shadow-lg hover:shadow-blue-500/5"
                 key={index}
               >
-                {item}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                <span className="relative z-10">{item}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col containerRight w-full md:w-2/3 h-full bg-blue-500/5 bg-gradient-to-r from-green-400/55 backdrop-blur-lg to-blue-500 items-center justify-center relative p-4 text-center">
-        <div>
-          <p className="text-[40px] md:text-[80px] bg-gradient-to-r from-amber-500 to-blue-700 bg-clip-text text-transparent">
+      <div className="flex flex-col containerRight w-full md:w-2/3 h-full bg-gradient-to-br from-slate-900/50 via-blue-900/20 to-slate-900/50 backdrop-blur-lg items-center justify-center relative p-4 text-center">
+        <div className="transform hover:scale-105 transition-transform duration-500">
+          <p className="text-[40px] md:text-[80px] font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-lg mb-6 tracking-tight">
             Career Roadmaps with AI
           </p>
-          <Typewriter text={"AI will Generate your Roadmaps..."} loop={true} speed={100} />
+          <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl p-6 backdrop-blur-md border border-white/5 shadow-lg">
+            <Typewriter text={"AI will Generate your Roadmaps..."} loop={true} speed={100} />
+          </div>
         </div>
       </div>
 
-      <div className="fixed rounded-lg bottom-0 w-full md:w-[60vw] md:left-[35vw] bg-gradient-to-r from-white/10 to-green-700/20 border border-white/20 shadow-xl backdrop-blur-md p-2 flex flex-col md:flex-row items-center justify-center">
-        <div className="input-container w-full max-w-[90vw] md:max-w-[70vw] flex flex-col md:flex-row items-center space-x-0 md:space-x-2">
+      <div className="fixed rounded-2xl bottom-4 w-full md:w-[60vw] md:left-[35vw] bg-gradient-to-r from-slate-900/90 to-slate-800/90 border border-white/10 shadow-2xl backdrop-blur-xl p-4 flex flex-col md:flex-row items-center justify-center">
+        <div className="input-container w-full max-w-[90vw] md:max-w-[70vw] flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3">
           <input
-            className="w-full placeholder:font-dancing p-3 text-lg font-mono placeholder:text-[20px] md:placeholder:text-[30px] placeholder:text-green-950/65 rounded-md bg-gray-300"
+            className="w-full p-4 text-lg font-mono placeholder:text-[18px] md:placeholder:text-[20px] placeholder:text-slate-400 rounded-xl bg-slate-800/50 border border-white/5 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300 shadow-inner"
             placeholder="Enter the roadmap Prompt"
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
           <button
-            className="mt-2 md:mt-0 backdrop-blur-lg group font-light flex items-center justify-around bg-blue-800/10 border border-white/20 h-12 px-6 text-white text-lg rounded-lg duration-500 shadow-lg hover:border-green-300 hover:text-green-300"
+            className="w-full md:w-auto backdrop-blur-lg group font-medium flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-8 h-12 text-white text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/20 border border-white/10"
             onClick={() => input.trim() !== "" ? handleClickButton() : toast("Enter valid Input")}
           >
-            <p>Generate</p>
+            <span className="group-hover:scale-105 transition-transform duration-300">Generate</span>
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ import {
   UserButton,
   SignIn
 } from '@clerk/nextjs'
-import "./globals.css"; 
+import './globals.css'
 
 import Nav from "./components/nav";
 
